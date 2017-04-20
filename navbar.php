@@ -57,7 +57,7 @@
             <!-- Side navigation links -->
             <li>
                 <ul class="collapsible collapsible-accordion"> 
-                    <li><a href="#" class="waves-effect">Data Buku</a></li>
+                    <li><a href="data_buku.php" class="waves-effect">Data Buku</a></li>
                     <li><a href="#" class="waves-effect">Peminjaman</a></li>
                 </ul>
             </li>
@@ -87,4 +87,4 @@
     
     <!--Main layout-->
     <main>
-        <div class="container-fluid text-center" style="height: 800px;"> 
+        <div class="container-fluid text" style="height: 800px;"> 
