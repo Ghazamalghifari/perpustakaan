@@ -18,20 +18,52 @@ else
 <div class="card card-block">
     <h4 class="card-title">Data Buku</h4>
 
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+    Tambah Data Buku
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <!--Content-->
+        <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title w-100" id="myModalLabel">Input Buku</h4>
+            </div>
+            <!--Body-->
+            <div class="modal-body">
+           
 	<form class="form" action="proses_tambah_data_buku.php" method="post">
 		<label>Judul Buku</label><br>
-		<input type="text" name="judul_buku"><br>
+		<input type="text" name="judul_buku" required><br>
 		<label>Nama Penulis</label><br>
-		<input type="text" name="nama_penulis"><br>
+		<input type="text" name="nama_penulis" required><br>
 		<label>Tahun Terbit</label><br>
-		<input type="number" name="tahun_terbit"><br>
+		<input type="number" name="tahun_terbit" required><br>
 		<label>Kategori Buku</label><br>
-		<input type="text" name="kategori_buku"><br>
+		<input type="text" name="kategori_buku" required><br>
 		<label>Jumlah Buku</label><br>
-		<input type="text" name="jumlah_buku"><br>
+		<input type="text" name="jumlah_buku" required><br>
 		
+
+            </div>
+            <!--Footer-->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button> 
 		<button type="submit" class="btn btn-default">Tambah</button>
 		</form>
+            </div>
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
+<!-- /.Live preview-->
+
 		<br> <br>
 		<table border="3" class="table table-bordered">
 		<thead>

@@ -36,16 +36,7 @@
             </li>
             <!--/. Logo --> 
             <!--Social-->
-            <li>
-                <ul class="social">
-                    <li><a class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a></li>
-                    <li><a class="icons-sm pin-ic"><i class="fa fa-pinterest"> </i></a></li>
-                    <li><a class="icons-sm gplus-ic"><i class="fa fa-google-plus"> </i></a></li>
-                    <li><a class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a></li>
-                </ul>
-            </li>
-            <!--/Social-->
-            <!--Search Form-->
+                        <!--Search Form-->
             <li>
                 <form class="search-form" role="search">
                     <div class="form-group waves-light">
@@ -59,6 +50,7 @@
                 <ul class="collapsible collapsible-accordion"> 
                     <li><a href="data_buku.php" class="waves-effect">Data Buku</a></li>
                     <li><a href="#" class="waves-effect">Peminjaman</a></li>
+                    <li><a href= "data_kategori.php"class= "waves-effect">Kategori</a></li>
                 </ul>
             </li>
             <!--/. Side navigation links -->
