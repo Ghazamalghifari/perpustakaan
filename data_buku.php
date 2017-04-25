@@ -41,12 +41,22 @@ else
 	<form class="form" action="proses_tambah_data_buku.php" method="post">
 		<label>Judul Buku</label><br>
 		<input type="text" name="judul_buku" required><br>
+		<label>Kategori Buku</label>
+		<select  class="form-control"  name="kategori_buku">
+			
+                    <?php 
+						include 'db.php';
+                      $query = $db->query("SELECT id,nama_kategori FROM Kategori");
+                     while ( $data = $query->fetch_array())
+                       {
+                        # code...
+                       echo '<option value="'. $data['id'].'">'. $data['nama_kategori'].'</option>';
+                     }
+                     ?> 
 		<label>Nama Penulis</label><br>
 		<input type="text" name="nama_penulis" required><br>
 		<label>Tahun Terbit</label><br>
 		<input type="number" name="tahun_terbit" required><br>
-		<label>Kategori Buku</label><br>
-		<input type="text" name="kategori_buku" required><br>
 		<label>Jumlah Buku</label><br>
 		<input type="text" name="jumlah_buku" required><br>
 		

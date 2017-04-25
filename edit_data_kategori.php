@@ -17,7 +17,7 @@
     <h4 class="card-title">Edit Data Kategori Buku</h4>	
 		<form class="form" action="proses_edit_data_kategori.php" method="post">
 		<label>Buku</label><br>
-		<input type="text" name="kategori" value="<?php echo $data_kategori['kategori'] ; ?>"><br>
+		<input type="text" name="nama_kategori" value="<?php echo $data_kategori['nama_kategori'] ; ?>"><br>
 		
 					
 <input type="hidden" name="id" value="<?php echo $id ?>">

@@ -14,11 +14,10 @@ else
  ?>
 <!--panel-->
 <div class="card card-block">
-    <h4 class="card-title">Kategori</h4>
+    <h4 class="card-title">Denda</h4>
  
 <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
-        Input Data Kategori
-</button>
+        Input Data Denda</button>
 
 
 	<!-- Modal -->
@@ -31,14 +30,16 @@ else
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-                <h4 class="modal-title w-100" id="myModalLabel">Kategori</h4>
+                <h4 class="modal-title w-100" id="myModalLabel">Data Denda</h4>
             </div>
             <!--Body-->
             <div class="modal-body">
            
-	<form class="form" action="proses_tambah_data_kategori.php" method="post">
-		<label>Data Kategori</label><br>
-        <input type="text" name="nama_kategori" required><br>
+	<form class="form" action="proses_tambah_data_denda.php" method="post">
+		<label>Jumlah Terlambat</label><br>
+        <input type="text" name="jumlah_terlambat" required><br>
+        <label>Total Denda</label><br>
+        <input type="text" name="total_denda" required><br>
         
 
 		</div>
@@ -57,7 +58,8 @@ else
 		<br> <br>
 		<table border="3" class="table table-bordered">
 		<thead>
-        <th>Kategori</th>
+        <th>Jumlah Terlambat</th>
+        <th>Total Denda</th>
         <th>Edit</th>
         <th>Hapus</th>
         
@@ -67,13 +69,14 @@ else
             //koneksi ke data php 
             include 'db.php';
             //buat queri untuk memilih data barang 
-            $query_kategori =$db->query("SELECT * FROM kategori");
-            //buat while untuk menampilkan baris datanya 
-            while ($data_kategori = mysqli_fetch_array($query_kategori)) {
+            $query_data_denda =$db->query("SELECT * FROM data_denda");
+            //buat while udantuk menampilkan baris datanya 
+            while ($data_denda = mysqli_fetch_array($query_data_denda)) {
                 echo "<tr>
-                <td>".$data_kategori['nama_kategori']."</td>
-                <td><a href='edit_data_kategori.php?id=".$data_kategori['id']."'type='button' class='btn btn-primary btn-sm'> Edit </a></td>
-                <td><a href='hapus_data_kategori.php?id=".$data_kategori['id']."' type='button' class='btn btn-danger btn-sm'> Hapus </a></td>
+                <td>".$data_denda['jumlah_terlambat']."</td>
+                <td>".$data_denda['total_denda']."</td>
+                <td><a href='edit_data_denda.php?id=".$data_denda['id']."'type='button' class='btn btn-primary btn-sm'> Edit </a></td>
+                <td><a href='hapus_data_denda.php?id=".$data_denda['id']."' type='button' class='btn btn-danger btn-sm'> Hapus </a></td>
                 </tr>";
             }
             ?>

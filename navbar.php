@@ -51,6 +51,7 @@
                     <li><a href="data_buku.php" class="waves-effect">Data Buku</a></li>
                     <li><a href="#" class="waves-effect">Peminjaman</a></li>
                     <li><a href= "data_kategori.php"class= "waves-effect">Kategori</a></li>
+                    <li><a href= "data_denda.php"class= "waves-effect">Data Denda</a></li>
                 </ul>
             </li>
             <!--/. Side navigation links -->
