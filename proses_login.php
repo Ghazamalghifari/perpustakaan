@@ -4,7 +4,7 @@ include "db.php";
 $username = $_POST['username'];
 $password = $_POST['password'];
 
- $query = $db->query("SELECT * FROM user WHERE username='$username'");
+ $query = $db->query("SELECT * FROM user_admin WHERE username='$username'");
  
  $cek  = mysqli_num_rows($query);
  $data  = mysqli_fetch_array($query);

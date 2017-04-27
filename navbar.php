@@ -13,8 +13,7 @@
     <link href="css/compiled.min.css" rel="stylesheet">
     
     <style>
-        .bg-skin-lp {
-            background-image: url('https://mdbootstrap.com/img/Photos/Horizontal/Nature/full%20page/img%20%283%29.jpg'); 
+        .bg-skin-lp { 
             background-size: cover; 
             background-repeat: no-repeat; 
             background-position: center center; 
@@ -30,8 +29,7 @@
         <ul id="slide-out" class="side-nav fixed sn-bg-1 custom-scrollbar">
             <!-- Logo -->
             <li>
-                <div class="logo-wrapper waves-light">
-                    <i class="fa fa-book fa-5x flex-center" aria-hidden="true"></i>
+                <div class="logo-wrapper waves-light"> 
                 </div>
             </li>
             <!--/. Logo --> 
@@ -48,10 +46,9 @@
             <!-- Side navigation links -->
             <li>
                 <ul class="collapsible collapsible-accordion"> 
-                    <li><a href="data_buku.php" class="waves-effect">Data Buku</a></li>
-                    <li><a href="#" class="waves-effect">Peminjaman</a></li>
-                    <li><a href= "data_kategori.php"class= "waves-effect">Kategori</a></li>
-                    <li><a href= "data_denda.php"class= "waves-effect">Data Denda</a></li>
+                    <li><a href="#" class="waves-effect">Data Anggota</a></li>
+                    <li><a href="#" class="waves-effect">Data Buku</a></li> 
+                    <li><a href="#" class="waves-effect">Peminjaman</a></li>  
                 </ul>
             </li>
             <!--/. Side navigation links -->
