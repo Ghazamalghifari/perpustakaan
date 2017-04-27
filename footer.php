@@ -21,12 +21,20 @@
     
     <!-- SCRIPTS -->
     <script type="text/javascript" src="js/compiled.min.js"></script>
+    <script type="text/javascript" src="table/media/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="table/media/js/dataTables.bootstrap4.js"></script>
 
     <script>
     $(".button-collapse").sideNav();
         
     var el = document.querySelector('.custom-scrollbar');
     Ps.initialize(el);
+    
+        $(document).ready(function() {
+        $('#example').DataTable( {
+            "scrollX": true
+        } );
+    } );
     </script>
 </body>
 

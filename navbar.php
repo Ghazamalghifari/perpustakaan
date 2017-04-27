@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- CSS -->
     <link href="css/compiled.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="table/media/css/dataTables.bootstrap4.css">
     
     <style>
         .bg-skin-lp { 
@@ -18,7 +19,8 @@
             background-repeat: no-repeat; 
             background-position: center center; 
             background-attachment: fixed;
-        }
+        } 
+    }
     </style>
 </head>
 
