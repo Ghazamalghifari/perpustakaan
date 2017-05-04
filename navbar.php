@@ -14,7 +14,8 @@
     <link rel="stylesheet" type="text/css" href="table/media/css/dataTables.bootstrap4.css">
     
     <style>
-        .bg-skin-lp { 
+            .bg-skin-lp {
+            background-image: url('https://mdbootstrap.com/img/Photos/Horizontal/Nature/full%20page/img%20%283%29.jpg');
             background-size: cover; 
             background-repeat: no-repeat; 
             background-position: center center; 
@@ -49,8 +50,11 @@
             <li>
                 <ul class="collapsible collapsible-accordion"> 
                     <li><a href="#" class="waves-effect">Data Anggota</a></li>
-                    <li><a href="#" class="waves-effect">Data Buku</a></li> 
-                    <li><a href="#" class="waves-effect">Peminjaman</a></li>  
+                    <li><a href="data_buku.php" class="waves-effect">Data Buku</a></li> 
+                    <li><a href="peminjaman.php" class="waves-effect">Peminjaman</a></li> 
+                    <li><a href="pengembalian.php" class="waves-effect">Pengembalian</a></li> 
+                    <li><a href="letak_rak.php" class="wafest-effect">Letak Rak</li>
+
                 </ul>
             </li>
             <!--/. Side navigation links -->
